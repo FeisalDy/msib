@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link { text-decoration: none; }
+        a:visited { text-decoration: none; }
+        a:hover { text-decoration: none; }
+        a:active { text-decoration: none; }
+        a { color: inherit; } 
+    </style>
+</head>
+<body bgcolor="grey">
+    
+    <table align="center">
+        <thead>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Link</legend>
+                    <ul>
+                        <li><a href="latihan1.html">Home</a></li>
+                        <li><a href="latihan2.html" target="_blank">Biodata</a></li>
+                    </ul>
+                </fieldset>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+    <!--membuat form-->
+    <form >
+        <fieldset>
+        <table border="0" align="center" cellpadding="10" width="30%">
+            <thead>
+                <tr bgcolor="white">
+                    <th colspan="2" >Daftar Honkai Impact 3rd</th>
+                </tr>
+            </thead>
+            <!--tfoot walaupun kodingan ada ditengah tetapi tampilan akan tetap dibawah-->
+            <tfoot>
+                <tr>
+                    <th>
+                        <button>Submit</button>
+                    </th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                <td width="25%">
+                    <!--inputan nama dengan menggunakann type text-->
+                    <label>Nama</label>
+                </td>
+                <td>
+                    <input type="text" name="nama" value="" 
+                    placeholder="Silahkan masukan nama" size="50" width="100">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                    <label>Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" value="" placeholder="Masukan email"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="L" checked> Laki-laki &nbsp;&nbsp;
+                        <input type="radio" name="gender" value="P" >Perempuan &nbsp;
+                        <input type="radio" name="gender" value="other">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Karakter</label></td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="Menulis">Kiana <br>
+                        <input type="checkbox" name="hobby" value="Membaca">Mei <br>
+                        <input type="checkbox" name="hobby" value="Makan">Bronya<br>
+                        <input type="checkbox" name="hobby" value="kuliner">Fu Hua
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Pendidikan</label></td>
+                    <td>
+                        <select name="Kubu">
+                            <option value="">----Pilih Kubu----</option>
+                            <option value="SMA">Desteny</option>
+                            <option value="D1">St Freya</option>
+                            <option value="D2">Anti-Entropy</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Bio</label></td>
+                    <td>
+                        <textarea name="alamat" cols="50" rows="5" placeholder="Tuliskan Bio"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Gold</label></td>
+                    <td>
+                        <input type="number" name="stok" value="stok" placeholder="masukan gold">
+                    </td>
+                </tr>
+            </tbody>
+        
+        </table>
+        </fieldset>
+    </form>
+    </td>
+    </tr>
+</table>
+</body>
+</html>
