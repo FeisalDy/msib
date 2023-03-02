@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+form {
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+form select{
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+}
+form input {
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+form button {
+  background: lightgrey;
+  padding: 0.7em;
+  border: 0;
+}
+form button:hover {
+  background: gray;
+}
+
+label {
+  text-align: right;
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0;
+}
+
+select {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+input:focus {
+  outline: 3px solid grey;
+}
+
+@media (min-width: 400px) {
+  form {
+    overflow: hidden;
+  }
+
+  label {
+    float: left;
+    width: 200px;
+  }
+
+  select{
+    float: right;
+    width: calc(100% - 200px);
+  }
+  input {
+    float: left;
+    width: calc(100% - 200px);
+  }
+
+  button {
+    float: right;
+    width: calc(100% - 200px);
+  }
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Form Input Produk</h1>
+        <form>
+            <label for="namaproduk" class="namaproduk">Nama Produk</label>
+            <input id="namaproduk" type="text">
+    
+            <label for="jenisproduk" class="jenisproduk">Jenis Produk</label>
+            <select id="jenisproduk">
+                <option value="makanan">Makanan</option>
+                <option value="minuman">Minuman</option>
+                <option value="lainnya">Lainnya</option>
+            </select>
+    
+            <label for="harga" class="harga">Harga</label>
+            <input id="harga" type="text">
+            <label for="jumlah" class="jumlah">Jumlah</label>
+            <input id="jumlah" type="text">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    <div>
+        <h1>
+            Form Register Member
+        </h1>
+        <form>
+            <label for="username" class="username">Username</label>
+            <input id="username" type="text">
+            <label for="password" class="password">Password</label>
+            <input id="password" type="password">
+            <button type="submit">Submit</button>
+            <button type="reset">Batal</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>
